@@ -54,7 +54,7 @@ class UnitTestLMO:
 class UnitTestDLM:
     # Test the detection and estimation of lane marking orientations
     def __init__(self, detect_lane_markings):
-        imgbgr = cv2.imread("../../assets/images/visual_control/pic1_rect.png")
+        imgbgr = cv2.imread("../../assets/images/visual_control/turn.png")
 
         img = cv2.cvtColor(imgbgr, cv2.COLOR_BGR2GRAY)
 
@@ -75,7 +75,7 @@ class UnitTestDLM:
         ax3.imshow(right_masked_img * img, cmap="gray")
         ax3.set_title("Mask (Right)"), ax3.set_xticks([]), ax3.set_yticks([])
 
-        imgbgr = cv2.imread("../../assets/images/visual_control/pic3_rect.png")
+        imgbgr = cv2.imread("../../assets/images/visual_control/pic11.png")
 
         img = cv2.cvtColor(imgbgr, cv2.COLOR_BGR2GRAY)
 
