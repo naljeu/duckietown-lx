@@ -10,9 +10,6 @@ from line_detector2.image_prep import ImagePrep
 from line_detector_interface import FAMILY_LINE_DETECTOR
 from line_detector_interface.visual_state_fancy_display import vs_fancy_display
 import matplotlib.pyplot as plt
-import os
-
-os.environ['LD_PRELOAD'] = '/lib/aarch64-linux-gnu/libgomp.so.1'
 
 line_detector_name = "baseline"
 image_prep_name = "baseline"
